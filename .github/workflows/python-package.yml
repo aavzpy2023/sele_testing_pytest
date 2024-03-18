@@ -42,7 +42,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest ./tests/test_login_page.py
+        pytest ./tests/test_login_page.py --browser=edge --headless=ok --html=reports/automation-report-edge_test_t1.html
     - name: Commint and push changes
     - id: auto-commit-action
     - uses: stefanzweifel/git-auto-commit-action@v5
