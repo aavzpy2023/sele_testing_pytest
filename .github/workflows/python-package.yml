@@ -47,7 +47,6 @@ jobs:
       id: auto-commit-action
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        branch: auto-commit-and-push
         commit_message: Automated Change
         commit_user_name: aavzpy2023
         commit_user_email: avinajera2022@gmail.com
